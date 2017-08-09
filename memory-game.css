@@ -1,0 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+	line-height: 1;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*End of reset*/
+.memory-wrap {
+  font-family: 'Orbitron';
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 236, 185, 1);
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#memory_board{
+	width: 70%;
+  transition: all .4s;
+	background-color: rgba(0, 236, 185, 1);
+	padding:24px;
+  flex-wrap: wrap;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#memory_board > .tile{
+	background: url(tile_bg.jpg) no-repeat;
+	background-color: rgba(0, 129, 106, 1);
+	border: 2px solid rgba(0, 129, 106, 1);
+	color: rgba(0, 129, 106, 1);
+  transition: all .15555s;
+  height: 10vw;
+  width: 10vw;
+	font-size: 5vw;
+	cursor: pointer;
+	text-align:center;
+  border-radius: 5px;
+  margin: 12px;
+	transition: all .3333s;
+}
+
+ #memory_board > .tile:hover {
+  transition: all .15555s;
+  opacity: 0.75;
+
+}
+.wrongTiles {
+	transform: rotateY(360deg);
+	transition: all 2s;
+	background-color: rgba(0, 129, 106, 1);
+}
+
+.memory-wrap > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+
+#gameHeader {
+	width: 80%;
+	height: 16vh;
+	display: inline-flex;
+	flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameHeaderElem {
+	text-align: center;
+	width: 33%;
+}
+#memory-title {
+	color: rgba(0, 129, 106, 1);
+	font-size: 4vw;
+}
+#hearts-list {
+	font-size: 2.5vw;
+	color: white;
+	display: flex;
+	letter-spacing: 5px;
+}
+#hearts-list > div {
+	flex-wrap: wrap;
+}
+
+#clock{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clock > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clock div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
